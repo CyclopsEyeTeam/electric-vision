@@ -41,6 +41,12 @@ import hmac
 import json
 import math
 import multiprocessing
+
+_MP_CTX = (
+    multiprocessing.get_context("fork")
+    if "fork" in multiprocessing.get_all_start_methods()
+    else multiprocessing.get_context("spawn")
+)
 import os
 import secrets
 import socket
@@ -1187,8 +1193,8 @@ class OutOfProcessVaultGateDaemon:
         self.client: Optional[OutOfProcessVaultGateClient] = None
 
     def __enter__(self) -> OutOfProcessVaultGateClient:
-        ready_event = multiprocessing.Event()
-        self._proc = multiprocessing.Process(
+        ready_event = _MP_CTX.Event()
+        self._proc = _MP_CTX.Process(
             target=_vault_gate_daemon_loop,
             args=(
                 self.socket_path,
@@ -1554,8 +1560,8 @@ class OutOfProcessAuditSinkDaemon:
         self.client: Optional[OutOfProcessAuditSinkClient] = None
 
     def __enter__(self) -> OutOfProcessAuditSinkClient:
-        ready_event = multiprocessing.Event()
-        self._proc = multiprocessing.Process(
+        ready_event = _MP_CTX.Event()
+        self._proc = _MP_CTX.Process(
             target=_audit_sink_daemon_loop,
             args=(
                 self.socket_path,
@@ -2137,8 +2143,8 @@ class OutOfProcessQuarantineAndKillSwitchDaemon:
         self.client: Optional[OutOfProcessQuarantineAndKillSwitchClient] = None
 
     def __enter__(self) -> OutOfProcessQuarantineAndKillSwitchClient:
-        ready_event = multiprocessing.Event()
-        self._proc = multiprocessing.Process(
+        ready_event = _MP_CTX.Event()
+        self._proc = _MP_CTX.Process(
             target=_quarantine_and_kill_switch_daemon_loop,
             args=(
                 self.socket_path,
@@ -2247,8 +2253,8 @@ def run_exec_gate_verification_suite(
         # Negative credential testing uses a separate daemon's expected UID, never RPC data.
         peer_auth_rejected = False
         negative_sock = os.path.join(run_dir, "n.sock")
-        negative_ready = multiprocessing.Event()
-        negative_proc = multiprocessing.Process(
+        negative_ready = _MP_CTX.Event()
+        negative_proc = _MP_CTX.Process(
             target=_vault_gate_daemon_loop,
             args=(negative_sock, os.getuid() + 9999, os.getgid(), negative_ready, None,
                   vault_daemon.capture_service_auth_secret),

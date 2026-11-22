@@ -1674,7 +1674,11 @@ class ElectricVisionAgentSession:
                 except OSError:
                     pass
 
-        ctx = multiprocessing.get_context("spawn")
+        ctx = (
+            multiprocessing.get_context("fork")
+            if "fork" in multiprocessing.get_all_start_methods()
+            else multiprocessing.get_context("spawn")
+        )
         hsm_ready = ctx.Event()
         self._hsm_proc = ctx.Process(
             target=_hsm_kms_enclave_loop,
