@@ -175,7 +175,7 @@ class ContinuousVision:
         size, crop = capture.get('window_size'), capture.get('crop')
         if (type(stamp) is not int or type(start) is not int or not 0 <= start <= stamp <= now
                 or now - start > 2_500_000_000 or capture.get('source_scope') != 'alien_field'
-                or capture.get('capture_method') != 'xcomposite_named_window_pixmap'
+                or capture.get('capture_method') not in ('xcomposite_named_window_pixmap', 'x11_client_window_drawable')
                 or type(capture.get('pid')) is not int or capture['pid'] < 1
                 or type(capture.get('window_id')) is not int or capture['window_id'] < 1
                 or capture['pid'] != self.binding.get('pid') or capture['window_id'] != self.binding.get('window_id')

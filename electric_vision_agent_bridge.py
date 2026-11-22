@@ -1628,12 +1628,16 @@ class ElectricVisionAgentSession:
         run_dir: str = "/tmp/cyclops-ee",
         default_resolution: Tuple[int, int] = (256, 256),
         lazy_enclave: bool = False,
+        allow_alien_field: bool = False,
     ) -> None:
+        if type(allow_alien_field) is not bool:
+            raise TypeError("allow_alien_field must be a bool")
         if default_resolution not in SUPPORTED_RESOLUTIONS:
             raise ValueError(f"Unsupported default_resolution: {default_resolution}")
         self.run_dir = run_dir
         self.default_resolution = default_resolution
         self.lazy_enclave = bool(lazy_enclave)
+        self.allow_alien_field = allow_alien_field
         self._simd_engine = NativeSimdOperatorEngine()
         self._multi_res_vault = _create_multi_res_closure_vault(self._simd_engine)
         self._source_dimensions: Dict[Tuple[str, str], Tuple[int, int]] = {}
@@ -1689,6 +1693,7 @@ class ElectricVisionAgentSession:
             forensic_path,
             vault_socket_path=vault_sock,
             audit_socket_path=audit_sock,
+            allow_alien_field=self.allow_alien_field,
         )
         self._vault_client = self._vault_daemon.__enter__()
         self._audit_client = self._audit_daemon.__enter__()
@@ -1767,12 +1772,17 @@ class ElectricVisionAgentSession:
         self._require_session_open()
         if (width, height) not in SUPPORTED_RESOLUTIONS:
             raise ValueError(f"Resolution {(width, height)} not in SUPPORTED_RESOLUTIONS {SUPPORTED_RESOLUTIONS}")
+        alien_signal = (
+            self.allow_alien_field
+            and origin_attestation == "authorized_alien_field_trace"
+            and source_id == "src_alien_field"
+        )
         if origin_attestation not in (
             "companion_desktop_glance",
             "play_engine_screen",
             "owner_supplied_picture",
             "synthetic_fixture",
-        ):
+        ) and not alien_signal:
             raise PermissionError(f"Refused live origin_attestation: {origin_attestation!r}")
         key = (source_id, source_version)
         harness_sources = getattr(self._harness, "_sources", {})

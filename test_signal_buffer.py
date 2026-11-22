@@ -206,6 +206,45 @@ class SignalBufferTests(unittest.TestCase):
         finally:
             shutil.rmtree(run_dir, ignore_errors=True)
 
+    def test_allow_alien_field_opt_in_and_default_refusal(self):
+        marks = [{"mark_id": "m0", "shape": "rect", "x0": 24, "y0": 24, "x1": 96, "y1": 96, "rgba": [0, 220, 255, 255]}]
+        run_default = tempfile.mkdtemp(prefix="cee-af0-", dir="/tmp")
+        run_allowed = tempfile.mkdtemp(prefix="cee-af1-", dir="/tmp")
+        os.chmod(run_default, 0o700)
+        os.chmod(run_allowed, 0o700)
+        try:
+            with ElectricVisionAgentSession(run_dir=run_default) as sess_off:
+                with self.assertRaises(PermissionError):
+                    sess_off.register_synthetic_canvas(
+                        "src_alien_field",
+                        "v1",
+                        marks,
+                        width=512,
+                        height=512,
+                        source_kind="canvas_state",
+                        origin_attestation="authorized_alien_field_trace",
+                    )
+
+            with ElectricVisionAgentSession(run_dir=run_allowed, allow_alien_field=True) as sess_on:
+                reg = sess_on.register_synthetic_canvas(
+                    "src_alien_field",
+                    "v1",
+                    marks,
+                    width=512,
+                    height=512,
+                    source_kind="canvas_state",
+                    origin_attestation="authorized_alien_field_trace",
+                )
+                self.assertEqual(reg["source_id"], "src_alien_field")
+                insp = sess_on.inspect_canvas("src_alien_field", "v1")
+                self.assertEqual(insp["status"], "ok")
+                self.assertGreaterEqual(
+                    insp["native_simd_metrics"]["op_connected_components_4c"]["component_count"], 1
+                )
+        finally:
+            shutil.rmtree(run_default, ignore_errors=True)
+            shutil.rmtree(run_allowed, ignore_errors=True)
+
 
 if __name__ == "__main__":
     unittest.main()

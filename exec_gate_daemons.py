@@ -1673,6 +1673,7 @@ def _quarantine_and_kill_switch_daemon_loop(
     allowed_uid: int,
     allowed_gid: int,
     ready_event: Any,
+    allow_alien_field: bool = False,
 ) -> None:
     die_with_parent()
     kill_switches_state: Dict[str, Dict[str, Any]] = {
@@ -1830,8 +1831,16 @@ def _quarantine_and_kill_switch_daemon_loop(
                                     "forensic_evidence_path": forensic_evidence_path,
                                     "escalation_path": ESCALATION_PATH_SPEC,
                                     "privacy_and_retention_contract": {
-                                        "synthetic_only_input_policy": True,
+                                        "synthetic_only_input_policy": not allow_alien_field,
                                         "live_capture_authorized": False,
+                                        "alien_field_trace_authorized": allow_alien_field,
+                                        "alien_field_trace_scope": {
+                                            "origin_attestation": "authorized_alien_field_trace",
+                                            "source_id": "src_alien_field",
+                                            "source_kind": "canvas_state",
+                                            "capture_identity_verified_by": "external_observer",
+                                            "observation_receipts_allowed": False,
+                                        } if allow_alien_field else None,
                                         "live_capture_future_controls": [
                                             "Explicit per-session user consent receipt signed by UI shell",
                                             "Window-scoped crop excluding OS notifications and credential fields",
@@ -1868,13 +1877,19 @@ def _quarantine_and_kill_switch_daemon_loop(
                         #    and, on the owner's word (2026-11-13/14), a PlayHub screen's frames: the player's own game
                         #    window, measured in memory only ('play_engine_screen').
                         #    All other live capture stays refused.
+                        alien_trace = (
+                            allow_alien_field
+                            and origin == "authorized_alien_field_trace"
+                            and sid == "src_alien_field"
+                            and skind in ("canvas_state", "captured_frame")
+                        )
                         if origin not in (
                             "synthetic_fixture",
                             "owner_supplied_picture",
                             "companion_desktop_glance",
                             "electric_browser_frame",
                             "play_engine_screen",
-                        ):
+                        ) and not alien_trace:
                             quarantine_rejected_count += 1
                             raise PermissionError(
                                 f"ERR_NON_SYNTHETIC_INPUT_PROHIBITED: origin_attestation='{origin}' rejected by zero-PII quarantine."
@@ -2109,11 +2124,15 @@ class OutOfProcessQuarantineAndKillSwitchDaemon:
         *,
         vault_socket_path: Optional[str] = None,
         audit_socket_path: Optional[str] = None,
+        allow_alien_field: bool = False,
     ) -> None:
+        if type(allow_alien_field) is not bool:
+            raise TypeError("allow_alien_field must be a bool")
         self.socket_path = socket_path
         self.forensic_evidence_path = forensic_evidence_path
         self.vault_socket_path = vault_socket_path
         self.audit_socket_path = audit_socket_path
+        self.allow_alien_field = allow_alien_field
         self._proc: Optional[multiprocessing.Process] = None
         self.client: Optional[OutOfProcessQuarantineAndKillSwitchClient] = None
 
@@ -2129,6 +2148,7 @@ class OutOfProcessQuarantineAndKillSwitchDaemon:
                 os.getuid(),
                 os.getgid(),
                 ready_event,
+                self.allow_alien_field,
             ),
             daemon=True,
         )

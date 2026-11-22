@@ -12,6 +12,8 @@
 
 It measures **exact physical quantities** (luminance, contrast, colour swatches, spatial bounding boxes, connected components, Sobel edge density, 64-bit `dhash64` perceptual hashes, $16\times16$ dirty-tile bitmasks, pairwise diffs, and multi-frame settling/oscillation regimes), enforces strict **epistemic boundaries** (never hallucinating semantics, OCR, or user intent), and guarantees **memory-only zeroization (`explicit_bzero`)** of raw pixel buffers.
 
+> **Live Companion Demo — [Alien World (`CyclopsEyeTeam/alien-world`)](https://github.com/CyclopsEyeTeam/alien-world):** Clone `alien-world` alongside `electric-vision` and ask your coding agent to set them up — your agent can launch the live OpenGL electrical-rift simulation, observe its drifting Infinite Colour cosmos via Electric Eye + Active Signal Temp Buffer (`./bin/observe-with-electric-eye` or `./bin/alien-observer-mcp`), and speak or show small pixel drawings back to the rift!
+
 ---
 
 ## Key Capabilities
