@@ -1,0 +1,858 @@
+{
+ "version": 2,
+ "title": "The Electric Eye \u2014 Verified Enclave Emblem",
+ "plan": {
+  "horizon": 0.500978,
+  "focal_point": [
+   0.500978,
+   0.500978
+  ],
+  "light_source": [
+   0.477495,
+   0.477495
+  ],
+  "mood": "crystalline, verified, analytical",
+  "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+ },
+ "parts": [],
+ "relations": [],
+ "objects": [
+  {
+   "kind": "vector",
+   "bounds": [
+    0.101761,
+    0.101761,
+    0.900196,
+    0.900196
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-1",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00e5ff33"
+    },
+    "pressure": [],
+    "commands": [
+     [
+      "M",
+      1.0,
+      0.5
+     ],
+     [
+      "C",
+      1.0,
+      0.776142,
+      0.776142,
+      1.0,
+      0.5,
+      1.0
+     ],
+     [
+      "C",
+      0.223858,
+      1.0,
+      0.0,
+      0.776142,
+      0.0,
+      0.5
+     ],
+     [
+      "C",
+      0.0,
+      0.223858,
+      0.223858,
+      0.0,
+      0.5,
+      0.0
+     ],
+     [
+      "C",
+      0.776142,
+      0.0,
+      1.0,
+      0.223858,
+      1.0,
+      0.5
+     ],
+     [
+      "Z"
+     ],
+     [
+      "M",
+      0.960784,
+      0.5
+     ],
+     [
+      "C",
+      0.960784,
+      0.245516,
+      0.754484,
+      0.039216,
+      0.5,
+      0.039216
+     ],
+     [
+      "C",
+      0.245516,
+      0.039216,
+      0.039216,
+      0.245516,
+      0.039216,
+      0.5
+     ],
+     [
+      "C",
+      0.039216,
+      0.754484,
+      0.245516,
+      0.960784,
+      0.5,
+      0.960784
+     ],
+     [
+      "C",
+      0.754484,
+      0.960784,
+      0.960784,
+      0.754484,
+      0.960784,
+      0.5
+     ],
+     [
+      "Z"
+     ]
+    ],
+    "opacity": 1,
+    "kind": "path",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-1",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.078278,
+    0.078278,
+    0.117417,
+    0.117417
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-2",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "rectangle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-2",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.88454,
+    0.078278,
+    0.923679,
+    0.117417
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-3",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "rectangle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-3",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.078278,
+    0.88454,
+    0.117417,
+    0.923679
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-4",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "rectangle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-4",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.88454,
+    0.88454,
+    0.923679,
+    0.923679
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-5",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "rectangle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-5",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.156556,
+    0.313112,
+    0.845401,
+    0.688845
+   ],
+   "points": [],
+   "color": "#102840",
+   "width": 0.007812,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-6",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#102840"
+    },
+    "pressure": [],
+    "commands": [
+     [
+      "M",
+      0.0,
+      0.5
+     ],
+     [
+      "L",
+      0.5,
+      0.0
+     ],
+     [
+      "L",
+      1.0,
+      0.5
+     ],
+     [
+      "L",
+      0.5,
+      1.0
+     ],
+     [
+      "Z"
+     ]
+    ],
+    "opacity": 1,
+    "kind": "path",
+    "stroke": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "id": "mark-6",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.367906,
+    0.367906,
+    0.634051,
+    0.634051
+   ],
+   "points": [],
+   "color": "#00b0ff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-7",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#00b0ff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "circle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-7",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.395303,
+    0.395303,
+    0.606654,
+    0.606654
+   ],
+   "points": [],
+   "color": "#ffb300",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-8",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#ffb300"
+    },
+    "pressure": [],
+    "commands": [
+     [
+      "M",
+      1.0,
+      0.5
+     ],
+     [
+      "C",
+      1.0,
+      0.776142,
+      0.776142,
+      1.0,
+      0.5,
+      1.0
+     ],
+     [
+      "C",
+      0.223858,
+      1.0,
+      0.0,
+      0.776142,
+      0.0,
+      0.5
+     ],
+     [
+      "C",
+      0.0,
+      0.223858,
+      0.223858,
+      0.0,
+      0.5,
+      0.0
+     ],
+     [
+      "C",
+      0.776142,
+      0.0,
+      1.0,
+      0.223858,
+      1.0,
+      0.5
+     ],
+     [
+      "Z"
+     ],
+     [
+      "M",
+      0.851852,
+      0.5
+     ],
+     [
+      "C",
+      0.851852,
+      0.305678,
+      0.694322,
+      0.148148,
+      0.5,
+      0.148148
+     ],
+     [
+      "C",
+      0.305678,
+      0.148148,
+      0.148148,
+      0.305678,
+      0.148148,
+      0.5
+     ],
+     [
+      "C",
+      0.148148,
+      0.694322,
+      0.305678,
+      0.851852,
+      0.5,
+      0.851852
+     ],
+     [
+      "C",
+      0.694322,
+      0.851852,
+      0.851852,
+      0.694322,
+      0.851852,
+      0.5
+     ],
+     [
+      "Z"
+     ]
+    ],
+    "opacity": 1,
+    "kind": "path",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-8",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.457926,
+    0.457926,
+    0.544031,
+    0.544031
+   ],
+   "points": [],
+   "color": "#05070b",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-9",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#05070b"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "circle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-9",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.463796,
+    0.463796,
+    0.491194,
+    0.491194
+   ],
+   "points": [],
+   "color": "#ffffff",
+   "width": 0.001,
+   "filled": true,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-10",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "solid",
+     "color": "#ffffff"
+    },
+    "pressure": [],
+    "commands": [],
+    "opacity": 1,
+    "kind": "circle",
+    "stroke": {
+     "type": "none"
+    },
+    "id": "mark-10",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.219178,
+    0.5,
+    0.344423,
+    0.501957
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.005859,
+   "filled": false,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-11",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "none"
+    },
+    "pressure": [],
+    "commands": [
+     [
+      "M",
+      0.0,
+      0.5
+     ],
+     [
+      "L",
+      1.0,
+      0.5
+     ]
+    ],
+    "opacity": 1,
+    "kind": "path",
+    "stroke": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "id": "mark-11",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  },
+  {
+   "kind": "vector",
+   "bounds": [
+    0.657534,
+    0.5,
+    0.782779,
+    0.501957
+   ],
+   "points": [],
+   "color": "#00e5ff",
+   "width": 0.005859,
+   "filled": false,
+   "text": "",
+   "size": 0.05,
+   "angles": [
+    20,
+    30,
+    0,
+    100
+   ],
+   "id": "mark-12",
+   "layer": "mid",
+   "settings": {
+    "fill": {
+     "type": "none"
+    },
+    "pressure": [],
+    "commands": [
+     [
+      "M",
+      0.0,
+      0.5
+     ],
+     [
+      "L",
+      1.0,
+      0.5
+     ]
+    ],
+    "opacity": 1,
+    "kind": "path",
+    "stroke": {
+     "type": "solid",
+     "color": "#00e5ff"
+    },
+    "id": "mark-12",
+    "layer": "mid",
+    "plan": {
+     "horizon": 0.500978,
+     "focal_point": [
+      0.500978,
+      0.500978
+     ],
+     "light_source": [
+      0.477495,
+      0.477495
+     ],
+     "mood": "crystalline, verified, analytical",
+     "description": "Geometric emblem of the Electric Eye pixel-perception enclave at 512x512, featuring the outer verified enclave ring and corner calibration reticles, diamond sclera aperture, and AVX2 crystalline iris and pupil core."
+    }
+   }
+  }
+ ]
+}

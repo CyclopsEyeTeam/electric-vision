@@ -1,0 +1,729 @@
+{
+  "schema": "CYCLOPS_DRAW_WORLD_V3",
+  "id": "draw-mcp392388486",
+  "width": 512,
+  "height": 512,
+  "background": "#080c14",
+  "operations": [
+    {
+      "operationId": "host-m1",
+      "type": "COMPOUND_PATH",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "subpaths": [
+          {
+            "start": {
+              "x": 460,
+              "y": 256
+            },
+            "segments": [
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 460,
+                  "y": 368.66608896548183
+                },
+                "control2": {
+                  "x": 368.6660889654819,
+                  "y": 460
+                },
+                "end": {
+                  "x": 256,
+                  "y": 460
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 143.33391103451817,
+                  "y": 460
+                },
+                "control2": {
+                  "x": 52.00000000000003,
+                  "y": 368.6660889654819
+                },
+                "end": {
+                  "x": 52,
+                  "y": 256
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 52,
+                  "y": 143.33391103451817
+                },
+                "control2": {
+                  "x": 143.3339110345181,
+                  "y": 52.00000000000003
+                },
+                "end": {
+                  "x": 255.99999999999997,
+                  "y": 52
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 368.6660889654818,
+                  "y": 52
+                },
+                "control2": {
+                  "x": 460,
+                  "y": 143.3339110345181
+                },
+                "end": {
+                  "x": 460,
+                  "y": 255.99999999999994
+                }
+              }
+            ],
+            "closed": true
+          },
+          {
+            "start": {
+              "x": 444,
+              "y": 256
+            },
+            "segments": [
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 444,
+                  "y": 152.17046703181086
+                },
+                "control2": {
+                  "x": 359.82953296818914,
+                  "y": 68
+                },
+                "end": {
+                  "x": 256,
+                  "y": 68
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 152.17046703181086,
+                  "y": 68
+                },
+                "control2": {
+                  "x": 68.00000000000003,
+                  "y": 152.17046703181083
+                },
+                "end": {
+                  "x": 68,
+                  "y": 255.99999999999997
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 68,
+                  "y": 359.82953296818914
+                },
+                "control2": {
+                  "x": 152.1704670318108,
+                  "y": 444
+                },
+                "end": {
+                  "x": 255.99999999999997,
+                  "y": 444
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 359.82953296818914,
+                  "y": 444
+                },
+                "control2": {
+                  "x": 444,
+                  "y": 359.8295329681892
+                },
+                "end": {
+                  "x": 444,
+                  "y": 256.00000000000006
+                }
+              }
+            ],
+            "closed": true
+          }
+        ],
+        "fillRule": "nonzero"
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00e5ff33"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/outer-ring"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "outer-enclave-ring"
+    },
+    {
+      "operationId": "host-m2",
+      "type": "RECT",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "x": 40,
+        "y": 40,
+        "width": 20,
+        "height": 20
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00e5ff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/reticle-tl"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "outer-enclave-ring"
+    },
+    {
+      "operationId": "host-m3",
+      "type": "RECT",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "x": 452,
+        "y": 40,
+        "width": 20,
+        "height": 20
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00e5ff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/reticle-tr"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "outer-enclave-ring"
+    },
+    {
+      "operationId": "host-m4",
+      "type": "RECT",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "x": 40,
+        "y": 452,
+        "width": 20,
+        "height": 20
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00e5ff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/reticle-bl"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "outer-enclave-ring"
+    },
+    {
+      "operationId": "host-m5",
+      "type": "RECT",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "x": 452,
+        "y": 452,
+        "width": 20,
+        "height": 20
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00e5ff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/reticle-br"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "outer-enclave-ring"
+    },
+    {
+      "operationId": "host-m6",
+      "type": "PATH",
+      "authorId": "claude-code",
+      "createdAt": 1793392392230,
+      "geometry": {
+        "start": {
+          "x": 80,
+          "y": 256
+        },
+        "segments": [
+          {
+            "type": "LINE",
+            "end": {
+              "x": 256,
+              "y": 160
+            }
+          },
+          {
+            "type": "LINE",
+            "end": {
+              "x": 432,
+              "y": 256
+            }
+          },
+          {
+            "type": "LINE",
+            "end": {
+              "x": 256,
+              "y": 352
+            }
+          }
+        ],
+        "closed": true
+      },
+      "appearance": {
+        "stroke": {
+          "color": "#00e5ff",
+          "width": 4
+        },
+        "fill": {
+          "type": "SOLID",
+          "color": "#102840"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 2"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/sclera-diamond"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "sclera-aperture"
+    },
+    {
+      "operationId": "host-m7",
+      "type": "CIRCLE",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "center": {
+          "x": 256,
+          "y": 256
+        },
+        "radius": 68
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#00b0ff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/iris-outer"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    },
+    {
+      "operationId": "host-m8",
+      "type": "COMPOUND_PATH",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "subpaths": [
+          {
+            "start": {
+              "x": 310,
+              "y": 256
+            },
+            "segments": [
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 310,
+                  "y": 285.82337649086287
+                },
+                "control2": {
+                  "x": 285.82337649086287,
+                  "y": 310
+                },
+                "end": {
+                  "x": 256,
+                  "y": 310
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 226.17662350913716,
+                  "y": 310
+                },
+                "control2": {
+                  "x": 202,
+                  "y": 285.82337649086287
+                },
+                "end": {
+                  "x": 202,
+                  "y": 256
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 202,
+                  "y": 226.17662350913716
+                },
+                "control2": {
+                  "x": 226.17662350913716,
+                  "y": 202
+                },
+                "end": {
+                  "x": 256,
+                  "y": 202
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 285.8233764908628,
+                  "y": 202
+                },
+                "control2": {
+                  "x": 310,
+                  "y": 226.17662350913716
+                },
+                "end": {
+                  "x": 310,
+                  "y": 256
+                }
+              }
+            ],
+            "closed": true
+          },
+          {
+            "start": {
+              "x": 294,
+              "y": 256
+            },
+            "segments": [
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 294,
+                  "y": 235.01317950642985
+                },
+                "control2": {
+                  "x": 276.9868204935701,
+                  "y": 218
+                },
+                "end": {
+                  "x": 256,
+                  "y": 218
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 235.01317950642985,
+                  "y": 218
+                },
+                "control2": {
+                  "x": 218,
+                  "y": 235.01317950642985
+                },
+                "end": {
+                  "x": 218,
+                  "y": 256
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 218,
+                  "y": 276.9868204935701
+                },
+                "control2": {
+                  "x": 235.01317950642985,
+                  "y": 294
+                },
+                "end": {
+                  "x": 256,
+                  "y": 294
+                }
+              },
+              {
+                "type": "CUBIC",
+                "control1": {
+                  "x": 276.9868204935701,
+                  "y": 294
+                },
+                "control2": {
+                  "x": 294,
+                  "y": 276.9868204935702
+                },
+                "end": {
+                  "x": 294,
+                  "y": 256
+                }
+              }
+            ],
+            "closed": true
+          }
+        ],
+        "fillRule": "nonzero"
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#ffb300"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/iris-ring"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    },
+    {
+      "operationId": "host-m9",
+      "type": "CIRCLE",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "center": {
+          "x": 256,
+          "y": 256
+        },
+        "radius": 22
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#05070b"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/pupil-core"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    },
+    {
+      "operationId": "host-m10",
+      "type": "CIRCLE",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "center": {
+          "x": 244,
+          "y": 244
+        },
+        "radius": 7
+      },
+      "appearance": {
+        "stroke": null,
+        "fill": {
+          "type": "SOLID",
+          "color": "#ffffff"
+        },
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/pupil-spark"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    },
+    {
+      "operationId": "host-m11",
+      "type": "SEGMENT",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "start": {
+          "x": 112,
+          "y": 256
+        },
+        "end": {
+          "x": 176,
+          "y": 256
+        }
+      },
+      "appearance": {
+        "stroke": {
+          "color": "#00e5ff",
+          "width": 3
+        },
+        "fill": null,
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/crosshair-left"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    },
+    {
+      "operationId": "host-m12",
+      "type": "SEGMENT",
+      "authorId": "claude-code",
+      "createdAt": 1793392420601,
+      "geometry": {
+        "start": {
+          "x": 336,
+          "y": 256
+        },
+        "end": {
+          "x": 400,
+          "y": 256
+        }
+      },
+      "appearance": {
+        "stroke": {
+          "color": "#00e5ff",
+          "width": 3
+        },
+        "fill": null,
+        "opacity": 1
+      },
+      "provenance": {
+        "source": {
+          "system": "cyclopsimage",
+          "ref": "claude-code/mcp turn 3"
+        },
+        "evidence": [
+          {
+            "system": "claude-code",
+            "ref": "host/as/crosshair-right"
+          }
+        ]
+      },
+      "parentMarkId": null,
+      "construction": "iris-core"
+    }
+  ]
+}

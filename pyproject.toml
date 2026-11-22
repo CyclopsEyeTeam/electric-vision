@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electric-vision"
+version = "1.1.0"
+description = "Deterministic, zero-leakage pixel & continuous window perception enclave for AI agents, with AVX2 SIMD operators, Active Electric Signal Temp Buffering, and cryptographic observation receipts."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = [
+    "agents",
+    "computer-vision",
+    "electric-eye",
+    "electric-vision",
+    "simd",
+    "avx2",
+    "mcp",
+    "epistemic-hygiene",
+    "xcomposite",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+x11 = ["python-xlib>=0.33"]
+
+[tool.setuptools]
+py-modules = [
+    "continuous_vision",
+    "desktop_sight",
+    "electric_eye_harness",
+    "electric_vision_agent_bridge",
+    "electric_vision_cli",
+    "electric_vision_mcp",
+    "ev_child_guard",
+    "exec_gate_daemons",
+    "prod_gate_enclave",
+    "signal_buffer",
+    "visual_sources",
+    "x11_window_capture",
+]
